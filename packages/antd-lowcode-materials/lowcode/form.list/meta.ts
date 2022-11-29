@@ -25,4 +25,4 @@ export default {
     },
     supports: { className: true, style: true },
   },
-};
+} as ComponentMetadata | any;

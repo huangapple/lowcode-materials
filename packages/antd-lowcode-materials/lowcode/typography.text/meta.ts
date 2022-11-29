@@ -1,65 +1,61 @@
+import { ComponentMetadata } from "@alilc/lowcode-types";
 import snippets from './snippets';
+import { ChildrenPropF } from "../_base/prop";
 
 export default {
   snippets,
   componentName: 'Typography.Text',
   title: '文本',
-  category: '基础',
+  category: '通用',
   props: [
-    {
-      name: 'children',
-      title: { label: '内容', tip: '内容' },
-      propType: 'string',
-      defaultValue: '',
-      supportVariable: true,
-    },
+    ChildrenPropF({node: false}),
     {
       name: 'code',
-      title: { label: '添加代码样式', tip: '添加代码样式' },
+      title: "添加代码样式",
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'delete',
-      title: { label: '添加删除线样式', tip: '添加删除线样式' },
+      title: {label: '添加删除线样式', tip: '添加删除线样式'},
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'disabled',
-      title: { label: '是否禁用', tip: '是否为禁用状态' },
+      title: {label: '是否禁用', tip: '是否为禁用状态'},
       propType: 'bool',
       defaultValue: false,
     },
 
     {
       name: 'mark',
-      title: { label: '添加标记样式', tip: '添加标记样式' },
+      title: {label: '添加标记样式', tip: '添加标记样式'},
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'keyboard',
-      title: { label: '添加键盘样式', tip: '添加键盘样式' },
+      title: {label: '添加键盘样式', tip: '添加键盘样式'},
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'underline',
-      title: { label: '添加下划线样式', tip: '添加下划线样式' },
+      title: {label: '添加下划线样式', tip: '添加下划线样式'},
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'strong',
-      title: { label: '是否加粗', tip: '是否加粗' },
+      title: {label: '是否加粗', tip: '是否加粗'},
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'type',
-      title: { label: '文本类型', tip: '文本类型' },
-      propType: { type: 'oneOf', value: ['secondary', 'warning', 'danger'] },
+      title: {label: '文本类型', tip: '文本类型'},
+      propType: {type: 'oneOf', value: ['secondary', 'warning', 'danger']},
       setter: {
         componentName: 'SelectSetter',
         props: {
@@ -95,8 +91,8 @@ export default {
       items: [
         {
           name: 'copyable',
-          title: { label: '是否可拷贝', tip: '是否可拷贝' },
-          propType: { type: 'oneOfType', value: ['bool', 'object'] },
+          title: {label: '是否可拷贝', tip: '是否可拷贝'},
+          propType: {type: 'oneOfType', value: ['bool', 'object']},
           setter: [
             {
               componentName: 'BoolSetter',
@@ -111,8 +107,8 @@ export default {
         },
         {
           name: 'editable',
-          title: { label: '是否可编辑', tip: '是否可编辑' },
-          propType: { type: 'oneOfType', value: ['bool', 'object'] },
+          title: {label: '是否可编辑', tip: '是否可编辑'},
+          propType: {type: 'oneOfType', value: ['bool', 'object']},
           setter: [
             {
               componentName: 'BoolSetter',
@@ -131,7 +127,7 @@ export default {
             label: '自动溢出省略',
             tip: '设置自动溢出省略，需要设置元素宽度',
           },
-          propType: { type: 'oneOfType', value: ['bool', 'object'] },
+          propType: {type: 'oneOfType', value: ['bool', 'object']},
           setter: [
             {
               componentName: 'BoolSetter',
@@ -186,4 +182,4 @@ export default {
       ],
     },
   },
-};
+} as ComponentMetadata | any;

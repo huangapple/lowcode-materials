@@ -1,3 +1,4 @@
+import {Snippet} from "@alilc/lowcode-types/lib/metadata";
 export default [
   {
     title: '分割线',
@@ -24,4 +25,4 @@ export default [
       },
     },
   },
-];
+] as Snippet;

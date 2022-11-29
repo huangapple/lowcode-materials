@@ -1,10 +1,11 @@
+import {ComponentMetadata} from "@alilc/lowcode-types";
 import snippets from './snippets';
 
 export default {
   snippets,
   componentName: 'Typography.Title',
   title: '标题',
-  category: '基础',
+  category: '通用',
   props: [
     {
       name: 'children',
@@ -116,4 +117,4 @@ export default {
     },
   ],
   configure: { supports: { style: true } },
-};
+} as ComponentMetadata | any;

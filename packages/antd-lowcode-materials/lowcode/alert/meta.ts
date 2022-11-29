@@ -1,3 +1,4 @@
+import {ComponentMetadata} from "@alilc/lowcode-types";
 import snippets from './snippets';
 
 export default {
@@ -16,19 +17,19 @@ export default {
     },
     {
       name: 'banner',
-      title: { label: '顶部公告', tip: '是否用作顶部公告' },
+      title: {label: '顶部公告', tip: '是否用作顶部公告'},
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'closable',
-      title: { label: '可关闭', tip: '默认不显示关闭按钮' },
+      title: {label: '可关闭', tip: '默认不显示关闭按钮'},
       propType: 'bool',
     },
     {
       name: 'closeText',
-      title: { label: '自定义关闭按钮', tip: '自定义关闭按钮' },
-      propType: { type: 'oneOfType', value: ['string', 'node'] },
+      title: {label: '自定义关闭按钮', tip: '自定义关闭按钮'},
+      propType: {type: 'oneOfType', value: ['string', 'node']},
     },
     {
       name: 'description',
@@ -36,7 +37,7 @@ export default {
         label: '描述信息',
         tip: '警告提示的辅助性文字介绍',
       },
-      propType: { type: 'oneOfType', value: ['string', 'node'] },
+      propType: {type: 'oneOfType', value: ['string', 'node']},
     },
     {
       name: 'icon',
@@ -48,17 +49,17 @@ export default {
     },
     {
       name: 'message',
-      title: { label: '警告提示内容', tip: '警告提示内容' },
-      propType: { type: 'oneOfType', value: ['string', 'node'] },
+      title: {label: '警告提示内容', tip: '警告提示内容'},
+      propType: {type: 'oneOfType', value: ['string', 'node']},
     },
     {
       name: 'showIcon',
-      title: { label: '显示图标', tip: '是否显示辅助图标' },
+      title: {label: '显示图标', tip: '是否显示辅助图标'},
       propType: 'bool',
     },
     {
       name: 'type',
-      title: { label: '类型', tip: '类型' },
+      title: {label: '类型', tip: '类型'},
       propType: {
         type: 'oneOf',
         value: ['success', 'info', 'warning', 'error'],
@@ -66,7 +67,7 @@ export default {
     },
     {
       name: 'onClose',
-      title: { label: '关闭时触发的回调函数', tip: '关闭时触发的回调函数' },
+      title: {label: '关闭时触发的回调函数', tip: '关闭时触发的回调函数'},
       propType: 'func',
     },
   ],
@@ -82,4 +83,4 @@ export default {
       ],
     },
   },
-};
+} as ComponentMetadata | any;

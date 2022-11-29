@@ -23,4 +23,4 @@ export default {
     component: { isContainer: true },
     supports: { style: true },
   },
-};
+} as ComponentMetadata | any;

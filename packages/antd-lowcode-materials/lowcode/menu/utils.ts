@@ -94,4 +94,4 @@ export const itemsExtraProps = {
       },
     );
   },
-};
+} as ComponentMetadata | any;

@@ -1,10 +1,11 @@
+import {ComponentMetadata} from "@alilc/lowcode-types";
 import snippets from './snippets';
 
 export default {
   snippets,
   componentName: 'Typography.Paragraph',
   title: '段落',
-  category: '基础',
+  category: '通用',
   props: [
     {
       name: 'children',
@@ -15,7 +16,7 @@ export default {
     },
     {
       name: 'code',
-      title: { label: '添加代码样式', tip: '添加代码样式' },
+      title: { label: '添加代码样式xxx', tip: '添加代码样式aaa' },
       propType: 'bool',
       defaultValue: false,
     },
@@ -115,4 +116,4 @@ export default {
     },
   ],
   configure: { supports: { style: true, events: ['onChange'] } },
-};
+} as ComponentMetadata | any;
