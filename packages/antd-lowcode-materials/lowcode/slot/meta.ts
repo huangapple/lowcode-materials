@@ -1,3 +1,5 @@
+import { ComponentMetadata } from "@alilc/lowcode-types";
+
 module.exports = {
   componentName: 'Slot',
   npm: {

@@ -1,3 +1,5 @@
+import { ComponentMetadata } from "@alilc/lowcode-types";
+
 export default {
   componentName: 'Form.List',
   title: '表单列表',

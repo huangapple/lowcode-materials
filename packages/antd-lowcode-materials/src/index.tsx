@@ -26,7 +26,8 @@ export { Carousel } from 'antd';
 
 export { Col } from 'antd';
 
-export { Comment } from 'antd';
+//5.x 移除了
+// export { Comment } from 'antd';
 
 export { Descriptions } from 'antd';
 
@@ -58,7 +59,8 @@ export { Statistic } from 'antd';
 
 export { notification } from 'antd';
 
-export { PageHeader } from 'antd';
+//5.x 移除了
+// export { PageHeader } from 'antd';
 
 export { Pagination } from 'antd';
 

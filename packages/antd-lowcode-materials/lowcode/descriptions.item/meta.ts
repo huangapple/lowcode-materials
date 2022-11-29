@@ -1,3 +1,5 @@
+import { ComponentMetadata } from "@alilc/lowcode-types";
+
 export default {
   componentName: 'Descriptions.Item',
   title: '描述列表项',

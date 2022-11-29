@@ -1,3 +1,4 @@
+import { ComponentMetadata } from '@alilc/lowcode-types';
 import { uuid } from '../_utils/utils';
 
 export const itemsExtraProps = {
