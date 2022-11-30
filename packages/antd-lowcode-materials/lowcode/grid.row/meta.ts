@@ -1,4 +1,4 @@
-import {ComponentMetadata} from "@alilc/lowcode-types";
+import { ComponentMetadata } from "@alilc/lowcode-types";
 import snippets from './snippets';
 
 export default {
@@ -8,9 +8,14 @@ export default {
   category: '布局',
   props: [
     {
+      title: "内容",
+      name: "children",
+      propType: "node"
+    },
+    {
       name: 'align',
       title: { label: '垂直对齐方式', tip: '垂直对齐方式' },
-      propType: { type: 'oneOf', value: ['top', 'middle', 'bottom'] },
+      propType: { type: 'oneOf', value: ['top', 'middle', 'bottom', "stretch"] },
     },
     {
       name: 'h-gutter',

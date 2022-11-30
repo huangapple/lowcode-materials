@@ -1,5 +1,6 @@
-import {ComponentMetadata} from "@alilc/lowcode-types";
+import { ComponentMetadata } from "@alilc/lowcode-types";
 import snippets from './snippets';
+import { ChildrenPropF } from "../_base/prop";
 
 export default {
   snippets,
@@ -7,11 +8,8 @@ export default {
   title: '分割线',
   category: '布局',
   props: [
-    {
-      name: 'className',
-      title: { label: '分割线样式类', tip: '分割线样式类' },
-      propType: 'string',
-    },
+
+    ChildrenPropF({ node: true }),
     {
       name: 'dashed',
       title: { label: '是否虚线', tip: '是否虚线' },
@@ -32,11 +30,7 @@ export default {
       },
       propType: { type: 'oneOfType', value: ['string', 'number'] },
     },
-    {
-      name: 'style',
-      title: { label: '分割线样式对象', tip: '分割线样式对象' },
-      propType: 'object',
-    },
+
     {
       name: 'type',
       title: { label: '方向', tip: '水平还是垂直类型' },

@@ -35,6 +35,21 @@ export default {
       },
       defaultValue: 'middle',
     },
+    {
+      name: 'wrap',
+      title: { label: '是否自动换行', tip: '是否自动换行' },
+      propType: "bool",
+      condition: {
+        type: 'JSFunction',
+        value: 'target => target.getProps().getPropValue("direction")==="horizontal"',
+      },
+    },
+    {
+      name: 'split',
+      title: { label: '间隔组件', tip: '间隔组件' },
+      propType: "node",
+
+    },
   ],
   configure: { component: { isContainer: true }, supports: { style: true } },
 } as ComponentMetadata | any;

@@ -1,4 +1,5 @@
 import { PropConfig } from "@alilc/lowcode-types";
+import { SetterType } from "@alilc/lowcode-types/lib/setter-config";
 
 export const TargetProp = {
   name: 'target',
@@ -41,7 +42,7 @@ export const TargetProp = {
 } as PropConfig;
 
 
-export const ChildrenPropF = (args: { node: boolean }) => {
+export const ChildrenPropF = (args: { node: boolean } = { node: false }) => {
 
 
   let setter = ['StringSetter', 'VariableSetter']
@@ -64,3 +65,5 @@ export const ChildrenPropF = (args: { node: boolean }) => {
   } as PropConfig;
 
 }
+
+
