@@ -1,4 +1,4 @@
-import {ComponentMetadata} from "@alilc/lowcode-types";
+import { ComponentMetadata } from "@alilc/lowcode-types";
 import snippets from './snippets';
 
 export default {
@@ -46,9 +46,8 @@ export default {
     },
     {
       name: 'split',
-      title: { label: '间隔组件', tip: '间隔组件' },
+      title: { label: '间隔组件', tip: '间隔组件,可拖组件进来， 常用的有竖向分隔线' },
       propType: "node",
-
     },
   ],
   configure: { component: { isContainer: true }, supports: { style: true } },
