@@ -1,4 +1,5 @@
-import { ComponentMetadata } from "@alilc/lowcode-types";
+//不能引入这个， 引入就崩
+// import { ComponentMetadata } from "@alilc/lowcode-types";
 
 module.exports = {
   componentName: 'Slot',
@@ -60,4 +61,4 @@ module.exports = {
       },
     },
   },
-} as ComponentMetadata | any;
+};
