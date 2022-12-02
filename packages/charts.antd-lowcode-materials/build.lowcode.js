@@ -1,4 +1,4 @@
-const { name, version } = require('./package.json');
+const {name, version} = require('./package.json');
 
 module.exports = {
   sourceMap: false,
@@ -34,6 +34,18 @@ module.exports = {
                   'https://g.alicdn.com/code/lib/alifd__next/1.25.23/next-with-locales.min.js',
                 ],
                 library: 'Next',
+              },
+
+              {
+                package: '@ant-design/charts',
+                version: '1.4.2',
+                urls: [
+                  `//unpkg.com/@ant-design/plots@latest/dist/plots.min.js`,
+                  `//unpkg.com/@ant-design/flowchart@latest/dist/flowchart.min.js`,
+                  `//unpkg.com/@ant-design/maps@latest/dist/maps.min.js`,
+                  `//unpkg.com/@ant-design/graphs@latest/dist/graphs.min.js`,
+                ],
+                library: '@ant-design/charts',
               },
               {
                 title: 'NextTable',
